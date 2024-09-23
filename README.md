@@ -4,4 +4,4 @@ Manage Rentals in Frappe
 
 #### License
 
-mit
+mit# Rentals

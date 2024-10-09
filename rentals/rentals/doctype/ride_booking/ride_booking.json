@@ -1,24 +1,29 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-09-17 22:22:03.586172",
+ "creation": "2024-09-23 23:02:04.754210",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "section_break_t2sk",
   "order",
   "amended_from",
   "vehicle",
-  "column_break_pxpu",
+  "column_break_hlnf",
   "driver",
   "still_editable",
-  "section_break_higu",
+  "section_break_knnn",
   "items",
-  "section_break_gsnn",
+  "section_break_wiij",
   "rate",
-  "column_break_eznf",
+  "column_break_awzf",
   "total_amount"
  ],
  "fields": [
+  {
+   "fieldname": "section_break_t2sk",
+   "fieldtype": "Section Break"
+  },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
@@ -38,18 +43,25 @@
    "reqd": 1
   },
   {
+   "fieldname": "column_break_hlnf",
+   "fieldtype": "Column Break"
+  },
+  {
    "fieldname": "driver",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Driver",
    "options": "Driver",
    "reqd": 1
   },
   {
-   "fieldname": "column_break_pxpu",
-   "fieldtype": "Column Break"
+   "allow_on_submit": 1,
+   "fieldname": "still_editable",
+   "fieldtype": "Data",
+   "label": "Still editable"
   },
   {
-   "fieldname": "section_break_higu",
+   "fieldname": "section_break_knnn",
    "fieldtype": "Section Break"
   },
   {
@@ -59,7 +71,7 @@
    "options": "Ride Booking Item"
   },
   {
-   "fieldname": "section_break_gsnn",
+   "fieldname": "section_break_wiij",
    "fieldtype": "Section Break"
   },
   {
@@ -68,19 +80,13 @@
    "label": "Rate"
   },
   {
-   "fieldname": "total_amount",
-   "fieldtype": "Currency",
-   "label": "Total Amount"
-  },
-  {
-   "fieldname": "column_break_eznf",
+   "fieldname": "column_break_awzf",
    "fieldtype": "Column Break"
   },
   {
-   "allow_on_submit": 1,
-   "fieldname": "still_editable",
-   "fieldtype": "Data",
-   "label": "Still editable"
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
   },
   {
    "fetch_from": "order.vehicle",
@@ -93,7 +99,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-09-19 18:02:00.297607",
+ "modified": "2024-09-23 23:45:02.739643",
  "modified_by": "Administrator",
  "module": "Rentals",
  "name": "Ride Booking",
@@ -113,8 +119,7 @@
    "write": 1
   }
  ],
- "sort_field": "modified",
+ "sort_field": "creation",
  "sort_order": "DESC",
- "states": [],
- "track_changes": 1
+ "states": []
 }

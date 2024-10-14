@@ -7,7 +7,9 @@ from frappe.model.document import Document
 
 class Driver(Document):
 	def before_save(self):
-		self.full_name=f"{self.first_name} {self.last_name}"
+		if self.last_name:
+			self.full_name=f"{self.first_name} {self.last_name}"
+		else 
 	def send_alert(self):
 		print("Sending message")
 #API Screte Key: 25824f0abbc050d
